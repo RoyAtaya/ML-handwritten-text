@@ -1,5 +1,5 @@
 import numpy as np
-from PIL import Image as image
+from PIL import Image as imag
 from pathlib import Path
 
 # get path of the images
@@ -18,7 +18,7 @@ def imageSplit(dirList):
   imageArr = []
   i = 0
   for item in dirList:
-    imgData = np.array(image.open(item))
+    imgData = np.array(imag.open(item))
     imageArr.append([imgData, item])
     i+=1
   print(imageArr)
